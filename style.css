@@ -1,0 +1,438 @@
+/* Google Font -- Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------- 
+  custom properties 
+--------------------*/
+:root {
+    --primary-color: #FF900E;
+    --secondary-color: #FFFFFF;
+    --secondary-dark-color: #131313;
+    --text-color: #727272;
+
+    --percent100: 100%;
+    --percent50: 50%;
+
+    --fwM: 500;
+    --fwSB: 600;
+    --fwB: 700;
+}
+
+/*-------------------- 
+  preset properties 
+--------------------*/
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-color);
+    background: none repeat scroll 0 0;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main>section {
+    margin: 130px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: var(--percent100);
+    height: auto;
+    vertical-align: middle;
+}
+
+p {
+    margin: 20px 0 32px;
+    line-height: 26px;
+}
+
+h1,
+h2,
+h4 {
+    color: var(--secondary-dark-color);
+}
+
+h1 {
+    font-size: 4rem;
+    /* 64px */
+    font-weight: var(--fwB);
+    line-height: 75px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    /* 45px */
+    font-weight: var(--fwB);
+}
+
+h4 {
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: var(--fwSB);
+}
+
+/*--------------------   
+  * REUSABLE SELECTION 
+---------------------*/
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+}
+
+.g3-btn {
+    padding: 18px 25px;
+    border-radius: 8px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: var(--fwSB);
+    line-height: 23px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*==================================================
+                header start
+==================================================*/
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/*----------------- nav-bar -----------------*/
+nav {
+    padding: 50px 0;
+}
+
+/* logo */
+.brand h3 {
+    font-size: 2rem;
+    font-weight: var(--fwB);
+    line-height: 53px;
+    color: var(--secondary-dark-color);
+}
+
+/* menu */
+.nav-menu li {
+    color: rgb(66, 66, 66);
+    font-size: 1.125rem;
+    font-weight: var(--fwM);
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+/*----------------- hero-section -----------------*/
+.banner {
+    margin-top: 114px;
+}
+
+/* content */
+.banner-content {
+    max-width: 868px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* image */
+.banner-image {
+    padding: 50px 0;
+}
+
+/*==================================================
+                header end
+==================================================*/
+
+/*==================================================
+                about start
+==================================================*/
+
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.about-content {
+    max-width: 537px;
+    margin-left: 76px;
+}
+
+.heading-first {
+    color: rgb(114, 114, 114);
+    font-weight: var(--fwM);
+}
+
+.heading-last {
+    color: var(--primary-color);
+
+}
+
+/*==================================================
+                about end
+==================================================*/
+
+/*==================================================
+                features start
+==================================================*/
+.features-wrap {
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.feature-content {
+    max-width: 586px;
+}
+
+.feature-content h2.T-lm {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 21px;
+    max-width: 440px;
+}
+
+.feature-item p {
+    margin: 10px 0;
+}
+
+.feature-item {
+    padding: 30px 42px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+
+button.experience-badge {
+    margin: -77px 0 0 -92px;
+    padding: 45px 42px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: none;
+}
+
+span#experience-year {
+    font-size: 4rem;
+    font-weight: var(--fwB);
+    color: var(--secondary-color);
+}
+
+button.experience-badge span {
+    font-size: 1.25rem;
+    font-weight: var(--fwSB);
+    color: var(--secondary-color);
+}
+
+/*==================================================
+                features end
+==================================================*/
+
+/*==================================================
+                facts start
+==================================================*/
+.facts {
+    margin-top: 100px;
+    gap: 125px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.facts>* {
+    flex: 1;
+}
+
+.fact-item {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 45px 36px 60px;
+    text-align: center;
+}
+
+.fact-item h2,
+.fact-item p {
+    font-weight: var(--fwSB);
+}
+
+.fact-item p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/*==================================================
+                facts end
+==================================================*/
+
+/*==================================================
+                sponsor start
+==================================================*/
+.sponsor-content {
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsor-images {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponsor-images img {
+    filter: grayscale(100%);
+}
+
+/*==================================================
+                sponsor end
+==================================================*/
+
+/*==================================================
+                   footer start
+==================================================*/
+.footer-wrap {
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    text-align: center;
+    padding: 38px 0;
+    margin-bottom: 120px;
+}
+
+.footer-wrap p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/*==================================================
+                    footer end
+==================================================*/
+
+
+/*----------------------------- Media Query -----------------------------/
+ /* Desktop */
+/* Checking Size: 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Tablet */
+/* Checking Size: 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* about section, features section */
+    .about-wrap,
+    .features-wrap {
+        flex-direction: column;
+    }
+
+    /* about section */
+    .about-content {
+        margin-top: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* features section */
+    .features-wrap {
+        gap: 80px;
+    }
+
+    button.experience-badge {
+        margin: -77px 0 0 0;
+    }
+
+    /* sponsor section */
+    .sponsor-images {
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+/* Checking Size: 400px */
+@media only screen and (max-width: 767px) {
+
+    /* navmenu, about section, features section, sponsor section */
+    nav,
+    .about-wrap,
+    .features-wrap,
+    .sponsor-images {
+        flex-direction: column;
+    }
+
+    /* banner section */
+    h1 {
+        font-size: 2.8rem;
+        line-height: 60px;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    /* about section */
+    .about-content {
+        margin-top: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* features section, sponsor section */
+    .features-wrap,
+    .sponsor-images {
+        gap: 60px;
+    }
+
+    button.experience-badge {
+        margin: -77px 0 0 0;
+    }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 320px) {}
